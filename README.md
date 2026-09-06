@@ -63,3 +63,34 @@ MONGO_URL=mongodb+srv://mdwasimu015_db_user:KSavMq0fMHVqQUQF@cluster0.kt25fpa.mo
 JWT_SECRET=wasim123secretkey
 ```
 ---
+
+
+#### `auth.module.ts`
+```bash
+import { Module } from '@nestjs/common';
+import { AuthService } from './auth.service';
+import { AuthController } from './auth.controller';
+import { MongooseModule } from '@nestjs/mongoose';
+import { UserSchemaFactory, UserSchema } from './user.schema';
+import { JwtModule } from '@nestjs/jwt';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { JwtStrategy } from './jwt.strategy';
+
+@Module({
+  imports: [MongooseModule.forFeature([{ name: UserSchema.name, schema: UserSchemaFactory}]),
+  JwtModule.registerAsync({
+    imports: [ConfigModule],
+    inject: [ConfigService],
+    useFactory: (config: ConfigService)=> ({
+      secret: config.get<string>('JWT_SECRET'),
+      signOptions: { expiresIn: '1h' },
+    })
+  })
+],
+  providers: [AuthService, JwtStrategy], ##add-koro-JwtStrategy
+  controllers: [AuthController]
+})
+export class AuthModule {}
+
+```
+---
