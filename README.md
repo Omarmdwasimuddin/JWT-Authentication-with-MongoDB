@@ -16,7 +16,7 @@ npm i @nestjs/config
 ```bash
 MONGODB_USERNAME=""
 MONGODB_PASSWORD=""
-MONGODB_URI=""
+MONGODB_URI="mongodb+srv://username:password@cluster0.t4iqsn7.mongodb.net"
 ```
 ---
 
