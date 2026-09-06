@@ -1,5 +1,26 @@
 ## JWT Authentication with MongoDB
 
+
+### install @nestjs/config
+```bash
+npm i @nestjs/config
+```
+>root e .env file toiri koro
+---
+
+>Note: browse- https://www.mongodb.com/cloud/atlas/register account create koro, clusters create koro .env te database connect koro.
+>[MongoDB Atlas Setup](https://github.com/Omarmdwasimuddin/mongodb-atlas)
+>##
+
+### `.env`
+```bash
+MONGODB_USERNAME=""
+MONGODB_PASSWORD=""
+MONGODB_URI=""
+```
+---
+
+
 #### Install
 ```bash
 npm i @nestjs/jwt passport-jwt @nestjs/passport passport
