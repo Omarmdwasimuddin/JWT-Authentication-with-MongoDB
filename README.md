@@ -23,6 +23,9 @@ MONGODB_URI="mongodb+srv://username:password@cluster0.t4iqsn7.mongodb.net"
 
 #### Install
 ```bash
+npm i @nestjs/mongoose mongoose
+```
+```bash
 npm i @nestjs/jwt passport-jwt @nestjs/passport passport
 ```
 ```bash
