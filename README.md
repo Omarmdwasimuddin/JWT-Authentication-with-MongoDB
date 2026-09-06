@@ -39,10 +39,10 @@ export type UserDocument = UserSchema & Document;
 @Schema()
 export class UserSchema {
     @Prop({ required: true, unique: true })
-    email: string;
+    email!: string;
 
     @Prop({ required: true })
-    password: string;
+    password!: string;
 
 }
 
