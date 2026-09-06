@@ -118,3 +118,10 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 }
 ```
 ---
+
+
+#### `auth.service.ts`
+```bash
+
+```
+---
