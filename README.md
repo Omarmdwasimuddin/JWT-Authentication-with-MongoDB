@@ -228,3 +228,18 @@ export class AppModule implements NestModule {
 }
 ```
 ---
+
+
+>## OUTPUT
+>
+><img width="713" height="423" alt="image" src="https://github.com/user-attachments/assets/21cd0a3a-b613-44bf-9c8e-1175bedf7d86" />
+>
+>#
+><img width="950" height="502" alt="image" src="https://github.com/user-attachments/assets/56b5022c-a055-4738-9d65-781f300595e2" />
+>
+>#
+><img width="725" height="482" alt="image" src="https://github.com/user-attachments/assets/e2d6fee6-dc93-411b-b0ee-b8e3511e3eb1" />
+>
+>#
+><img width="713" height="427" alt="image" src="https://github.com/user-attachments/assets/843667df-4653-454d-b85e-22b7c7be2462" />
+---
